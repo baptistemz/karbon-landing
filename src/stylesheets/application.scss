@@ -1,0 +1,14 @@
+$primary-color: #2CB591 !default;
+$secondary-color: #5A759E !default;
+$secondary-color: #5A759E !default;
+$success-color: #2CB591 !default;
+$danger-color: #F14D5A !default;
+$warning-color: #EBB03A !default;
+$title-color: #5A759E !default;
+$info-color: #62B1F6 !default;
+$grey-color: #9b9999 !default;
+$light-grey-color: #DDDCDC !default;
+@import  './variables/index';
+@import './pages/index';
+@import './utilities/index';
+@import './components/index';

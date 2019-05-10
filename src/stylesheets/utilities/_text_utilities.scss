@@ -1,0 +1,46 @@
+body {
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Baloo Bhai';
+  color: $secondary-color;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Rubik';
+  color: $secondary-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-20{
+  font-size: 1.3rem;
+}
+
+.white-text{
+  color: white;
+}
+
+.text-primary{
+  color: $primary-color;
+}
+
+.text-secondary{
+  color: $secondary-color;
+}
+
+.text-bold{
+  font-weight: bold;
+}

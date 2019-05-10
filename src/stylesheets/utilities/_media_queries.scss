@@ -1,0 +1,43 @@
+@media only screen and (min-width: 0px) and (max-width: 600px){
+  #room_name_form{
+    width: 96%
+  }
+  .login-btn-group{
+    position: absolute;
+    bottom: 2%;
+    right: 2%
+  }
+  html, p, body { font-size: 12px; }
+}
+@media only screen and (min-width: 601px) and (max-width: 959px){
+  #room_name_form{
+    width: 75%
+  }
+  .login-btn-group{
+    top: 2%;
+    left: 2%;
+    & p {
+      margin: 2px;
+    }
+  }
+  html, p, body { font-size: 14px; }
+  #home_mockup_section > #mockup_section_card{
+    margin: 100px 5%;
+  }
+}
+@media only screen and (min-width: 960px){
+  #room_name_form{
+    width: 75%
+  }
+  .login-btn-group{
+    top: 2%;
+    left: 2%;
+    & p {
+      margin: 4px;
+    }
+  }
+  html, p, body { font-size: 16px; }
+  #home_mockup_section > #mockup_section_card{
+    margin: 40px 10% 60px 10%;
+  }
+}

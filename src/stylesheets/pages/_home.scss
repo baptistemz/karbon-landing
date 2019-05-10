@@ -1,0 +1,191 @@
+.home-container{
+  padding: 5vh 5vw;
+  height: 90vh
+}
+
+.app-logo{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 15rem;
+  max-width: 35%;
+}
+
+.title-background{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/landing-bg-2.jpg');
+  background-position: 50% 25%;;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-btn-group{
+  position: absolute;
+  bottom: 18%;
+  display: flex;
+  width: 50%;
+  min-width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  &.xs{
+    bottom: 85%;
+  }
+}
+
+.down-btn{
+  position: absolute;
+  bottom: 10px;
+  font-size: 36px;
+  animation: bottomBounce 1s ease infinite;
+  cursor: pointer;
+}
+
+.up-btn{
+  position: absolute;
+  top: 10px;
+  font-size: 36px;
+  animation: topBounce 1s ease infinite;
+  cursor: pointer;
+}
+
+.title-overlay{
+  background-color: rgba(230, 230, 230, 0.7);
+  width: 100%;
+  padding: 40px;
+  margin-top: -80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home_title{
+  width: fit-content;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 2em;
+  span {
+    background-image: linear-gradient(to right, $secondary-color 0%, $secondary-color 100%);
+    background-repeat: repeat-x; // make it horizontal
+    background-position: 8px 100%; // change the second value to adjust how far from the top the underline should be
+    background-size: 100% 8px; // change the second value to the desired height of the underline
+  }
+}
+
+.quote-container{
+  position: relative;
+  height: 112px;
+  width: 100%;
+  & .quote{
+    -webkit-transition: all 0.8s ease-out;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+  }
+}
+
+.mockup-screen-container{
+  position: absolute;
+  width: 245px;
+  border: 1px solid rgba(100, 100, 100, 0.5);
+  overflow: hidden;
+  height: 436px;
+  top: 80px;
+  right: 17px;
+}
+
+.mockup-screen-content{
+  position: absolute;
+  background-size: cover;
+  background-repeat: none;
+  width: 245px;
+  height: 436px;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.section-content-container {
+  padding: 10px 30px 0 30px;
+  max-height: calc(90vh - 168px);
+  overflow-y: scroll;
+  width: 90%;
+  & > p{
+    font-size: 1.2rem;
+    margin-bottom: 8vh;
+  }
+}
+
+#home_mockup_section{
+  position: relative;
+  #mockup_section_card{
+    margin: 40px 5% 60px 5%;
+    position: relative;
+    border-radius: 4px;
+
+  }
+}
+
+#home_download_section{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > div:first-child{
+    min-height: calc(100vh - 130px);
+  }
+  & .download-intro-text{
+    max-width: 60vw;
+  }
+  & .download-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 126px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid $light-grey-color;
+    border-radius: 5px;
+  }
+}
+
+#footer{
+  width: calc(100vw - 80px);
+  height: 30px;
+  background-color: rgba($secondary-color, 0.8);
+  padding: 40px;
+  .footer-icon-container{
+    height: 30;
+    display: flex;
+    align-items: center;
+    .footer-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  a {
+    color: white
+  }
+}
+
+@media only screen and (max-width: 959px){
+  .section-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 30px 0 30px;
+    padding: 0;
+    max-height: calc(90vh - 168px);
+    overflow-y: hidden;
+    & > p{
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 0 3vw;
+    }
+    .pointer{
+      font-size: 1.6rem;
+      color: $primary-color
+    }
+  }
+}

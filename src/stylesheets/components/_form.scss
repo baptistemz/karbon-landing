@@ -1,0 +1,10 @@
+.input-field{
+  text-align: center;
+  color: #111111;
+  & > .prefix-icon {
+    position: absolute;
+  }
+  & > .field > div{
+    min-width: 30%;
+  }
+}
