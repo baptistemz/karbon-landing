@@ -2,7 +2,7 @@
   "name": "landing",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://karbon.earth",
+  "homepage":"https://www.karbon.earth",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
