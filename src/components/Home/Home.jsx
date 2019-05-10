@@ -158,9 +158,11 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
       </div>
       <div id="home_download_section">
         <Grid container spacing={40} style={{margin: "0 10vw", width: "80vw"}}>
-            <h3 id="home_title" className="margin-top-20">Liens de téléchargement</h3>
 
-          <p className="margin-auto text-center" style={{ width: "50vw" }}>L'application Karbon désormais disponible sur iOS et sur Android. Téléchargez-la sur votre mobile et scannez tout ce qui se mange</p>
+          <Grid item xs={12}>
+            <h3 id="home_title" className="margin-top-20">Liens de téléchargement</h3>
+            <p className="margin-auto text-center" style={{ width: "50vw" }}>L'application Karbon désormais disponible sur iOS et sur Android. Téléchargez-la sur votre mobile et scannez tout ce qui se mange</p>
+          </Grid>
 
           <Grid item xs={12} sm={6}>
             <a className="flex-column align-items-center download-link" target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/fr/app/karbon-scanner-écologique/id1411345032">

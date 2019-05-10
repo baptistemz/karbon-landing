@@ -14,7 +14,7 @@
 .title-background{
   height: 100vh;
   width: 100vw;
-  background-image: url('/landing-bg-2.jpg');
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6)), url('/landing-bg.jpg');
   background-position: 50% 25%;;
   background-size: cover;
   display: flex;
@@ -52,9 +52,9 @@
 }
 
 .title-overlay{
-  background-color: rgba(230, 230, 230, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
-  padding: 40px;
+  padding: 10px 10%;
   margin-top: -80px;
   display: flex;
   flex-direction: column;
@@ -62,8 +62,8 @@
 }
 
 #home_title{
-  width: fit-content;
-  font-size: 2.5em;
+  width: 100%;
+  font-size: 3em;
   text-align: center;
   line-height: 2em;
   span {
@@ -83,6 +83,7 @@
     position: absolute;
     width: 100%;
     text-align: center;
+    font-weight: bold;
     top: 0;
   }
 }

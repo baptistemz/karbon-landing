@@ -9,9 +9,9 @@ class Routes extends Component{
     return(
       <Router>
         <div>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/privacy_policy" component={PrivacyPolicy}/>
-          <Route exact path="/terms_and_conditions" component={TermsAndConditions}/>
+          <Route path="/" component={Home}/>
+          <Route path="/privacy_policy" component={PrivacyPolicy}/>
+          <Route path="/terms_and_conditions" component={TermsAndConditions}/>
         </div>
       </Router>
     )
