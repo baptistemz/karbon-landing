@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/karbon-landing/precache-manifest.437e039c6b73d1c08863b726556e40e1.js"
+  "/karbon-landing/precache-manifest.905ef4fccf1b7c1b2dd4780734eae38e.js"
 );
 
 self.addEventListener('message', (event) => {

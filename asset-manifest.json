@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/karbon-landing/static/css/main.83f580e2.chunk.css",
-    "main.js": "/karbon-landing/static/js/main.bde472b5.chunk.js",
-    "main.js.map": "/karbon-landing/static/js/main.bde472b5.chunk.js.map",
+    "main.css": "/karbon-landing/static/css/main.e73a7077.chunk.css",
+    "main.js": "/karbon-landing/static/js/main.5e054c42.chunk.js",
+    "main.js.map": "/karbon-landing/static/js/main.5e054c42.chunk.js.map",
     "runtime~main.js": "/karbon-landing/static/js/runtime~main.75074e26.js",
     "runtime~main.js.map": "/karbon-landing/static/js/runtime~main.75074e26.js.map",
-    "static/js/2.27c6c38b.chunk.js": "/karbon-landing/static/js/2.27c6c38b.chunk.js",
-    "static/js/2.27c6c38b.chunk.js.map": "/karbon-landing/static/js/2.27c6c38b.chunk.js.map",
+    "static/js/2.36f30263.chunk.js": "/karbon-landing/static/js/2.36f30263.chunk.js",
+    "static/js/2.36f30263.chunk.js.map": "/karbon-landing/static/js/2.36f30263.chunk.js.map",
     "index.html": "/karbon-landing/index.html",
-    "precache-manifest.437e039c6b73d1c08863b726556e40e1.js": "/karbon-landing/precache-manifest.437e039c6b73d1c08863b726556e40e1.js",
+    "precache-manifest.905ef4fccf1b7c1b2dd4780734eae38e.js": "/karbon-landing/precache-manifest.905ef4fccf1b7c1b2dd4780734eae38e.js",
     "service-worker.js": "/karbon-landing/service-worker.js",
-    "static/css/main.83f580e2.chunk.css.map": "/karbon-landing/static/css/main.83f580e2.chunk.css.map"
+    "static/css/main.e73a7077.chunk.css.map": "/karbon-landing/static/css/main.e73a7077.chunk.css.map"
   }
 }
