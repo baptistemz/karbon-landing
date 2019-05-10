@@ -69,8 +69,8 @@
   span {
     background-image: linear-gradient(to right, $secondary-color 0%, $secondary-color 100%);
     background-repeat: repeat-x; // make it horizontal
-    background-position: 8px 100%; // change the second value to adjust how far from the top the underline should be
-    background-size: 100% 8px; // change the second value to the desired height of the underline
+    background-position: 10px 100%; // change the second value to adjust how far from the top the underline should be
+    background-size: 100% 10px; // change the second value to the desired height of the underline
   }
 }
 
