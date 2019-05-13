@@ -2,7 +2,7 @@
   "name": "landing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.karbon.earth",
+  "homepage":"https://www.karbon.earth",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
@@ -18,16 +18,16 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snap",
     "add-domain": "echo \"www.karbon.earth\" > build/CNAME",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "postbuild": "react-snap",
     "deploy": "yarn add-domain && gh-pages -d build"
   },
   "reactSnap": {
-    "skipThirdPartyRequests": true
+    "waitFor": 1000,
+    "preconnectThirdParty": false
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,8 +45,5 @@
     ]
   },
   "main": "index.js",
-  "author": "baptistemz <mulliez.baptiste@gmail.com>",
-  "devDependencies": {
-    "react-snap": "^1.23.0"
-  }
+  "author": "baptistemz <mulliez.baptiste@gmail.com>"
 }
