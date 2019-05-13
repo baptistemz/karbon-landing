@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "add-domain && gh-pages -d build"
+    "deploy": "yarn add-domain && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
