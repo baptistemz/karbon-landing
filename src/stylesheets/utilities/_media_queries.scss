@@ -22,7 +22,10 @@
   }
   html, p, body { font-size: 14px; }
   #home_mockup_section > #mockup_section_card{
-    margin: 100px 5%;
+    margin: 20px 5%;
+    .section-content-container{
+      margin-bottom: 50px;
+    }
   }
 }
 @media only screen and (min-width: 960px){

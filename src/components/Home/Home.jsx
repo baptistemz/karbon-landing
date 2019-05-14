@@ -169,7 +169,7 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <Hidden smDown>
+            <Hidden xsDown>
               <a className="flex-column align-items-center download-link" target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/fr/app/karbon-scanner-écologique/id1411345032">
                 <IconButton style={{ fontSize: "3rem", backgroundColor: "transparent" }}>
                   <FontAwesomeIcon icon={faApple} style={{ marginBottom: 30 }} />
@@ -180,7 +180,7 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
                 </Button>
               </a>
             </Hidden>
-            <Hidden mdUp>
+            <Hidden smUp>
               <Button size="large" color="default">
                 <FontAwesomeIcon style={{ marginRight: 10, fontSize: 28, height: 28 }} icon={faAppStore} />
                 Télécharger sur iOS
@@ -189,7 +189,7 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <Hidden smDown>
+            <Hidden xsDown>
               <a className="flex-column align-items-center download-link" target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.baptistemz.karbon">
                 <IconButton style={{ fontSize: "3rem", backgroundColor: "transparent" }}>
                   <FontAwesomeIcon icon={faAndroid} style={{ marginBottom: 30 }} />
@@ -200,7 +200,7 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
                 </Button>
               </a>
             </Hidden>
-            <Hidden mdUp>
+            <Hidden smUp>
               <Button size="large" color="default">
                 <FontAwesomeIcon style={{ marginRight: 10, fontSize: 22, height: 28 }} icon={faGooglePlay} />
                 Télécharger sur Android

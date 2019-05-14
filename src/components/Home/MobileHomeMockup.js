@@ -26,7 +26,7 @@ const MobileHomeMockup = ({ step, sectionNumber, maxSteps, sectionName, xs, goTo
   return(
     <div className="flex-column align-items-center overflow-hidden" style={{ padding: 0, height: "calc(100vh - 100px)" }}>
       <MobileHomeSectionContent goToStep={goToStep} section={sections[sectionNumber]} step={step} />
-      <div style={{ padding: "30px", height: 0 }}>
+      <div style={{ padding: "1rem", height: 0 }}>
         <div className="position-relative">
           <img src="/iphone-mockup.png" alt=""/>
           <div className="mockup-screen-container">
