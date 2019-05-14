@@ -219,7 +219,9 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
             // </div>
           }
           <div className="partner-img-container">
-            <img src="/logo-euratechnologies.png" alt="euratechnologies"/>
+            <a href="https://www.euratechnologies.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/logo-euratechnologies.png" alt="euratechnologies"/>
+            </a>
           </div>
         </div>
       </div>
