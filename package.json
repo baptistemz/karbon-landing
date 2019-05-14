@@ -28,10 +28,10 @@
   "reactSnap": {
     "waitFor": 1000,
     "preconnectThirdParty": false,
-    "fixWebpackChunksIssue": false,
-    "puppeteerIgnoreHTTPSErrors": true,
-    "inlineCss": true,
-    "INLINE_RUNTIME_CHUNK":false
+    "viewport": {
+      "width": 1000,
+      "height": 700
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
