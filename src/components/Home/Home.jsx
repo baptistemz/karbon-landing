@@ -11,7 +11,7 @@ import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBarcode, faStarHalfAlt, faUsers, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBarcode, faStarHalfAlt, faUsers, faEnvelope, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
 import { faApple, faAndroid, faGooglePlay, faAppStore } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -128,7 +128,7 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
       <HomeTitle scrollTo={scrollTo} />
       <div id="home_mockup_section">
         <Grid item xs={12}>
-          <h3 id="home_title" style={{margin:  "50px auto 0 auto"}}>L'application</h3>
+          <h3 className="section-title">L'application</h3>
         </Grid>
         <div id="mockup_section_card">
           <Hidden mdUp>
@@ -154,13 +154,17 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
               />
           </Hidden>
         </div>
-
+        <div className="down-btn-container">
+          <div onClick={() => scrollTo("#home_download_section")} className="down-btn text-secondary">
+            <FontAwesomeIcon icon={faChevronCircleDown} />
+          </div>
+        </div>
       </div>
       <div id="home_download_section">
         <Grid container spacing={40} style={{margin: "0 10vw", width: "80vw"}}>
 
           <Grid item xs={12}>
-            <h3 id="home_title" className="margin-top-20">Liens de téléchargement</h3>
+            <h3 className="section-title">Liens de téléchargement</h3>
             <p className="margin-auto text-center" style={{ width: "50vw" }}>L'application Karbon désormais disponible sur iOS et sur Android. Téléchargez-la sur votre mobile et scannez tout ce qui se mange</p>
           </Grid>
 
@@ -187,8 +191,37 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
               </Button>
             </a>
           </Grid>
+          <div className="down-btn-container">
+            <div onClick={() => scrollTo("#home_partners_section")} className="down-btn white-text">
+              <FontAwesomeIcon icon={faChevronCircleDown} />
+            </div>
+          </div>
+        </Grid>
+      </div>
+      <div id="home_partners_section">
+        <Grid container spacing={40} style={{margin: "0 10vw", width: "80vw"}}>
+
+          <Grid item xs={12}>
+            <h3 className="section-title">Partenaires</h3>
+            {
+              // <p className="margin-auto text-center" style={{ width: "50vw" }}>Sans eux, rien ne serait possible</p>
+            }
+          </Grid>
 
         </Grid>
+        <div className="partners-banner">
+          {
+            // <div className="partner-img-container">
+            //   <img src="/logo-ademe.png" alt="euratechnologies"/>
+            // </div>
+            // <div className="partner-img-container">
+            //   <img src="/logo-openfoodfacts.png" alt="euratechnologies"/>
+            // </div>
+          }
+          <div className="partner-img-container">
+            <img src="/logo-euratechnologies.png" alt="euratechnologies"/>
+          </div>
+        </div>
       </div>
       <div id="footer" className="space-around">
         <Link to="privacy_policy" className="flex align-items-center">Privacy policy (en)</Link>

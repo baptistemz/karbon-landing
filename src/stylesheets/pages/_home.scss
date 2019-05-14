@@ -35,6 +35,13 @@
   }
 }
 
+.down-btn-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .down-btn{
   position: absolute;
   bottom: 10px;
@@ -64,6 +71,21 @@
 #home_title{
   width: 100%;
   font-size: 3em;
+  text-align: center;
+  line-height: 2em;
+  span {
+    background-image: linear-gradient(to right, $secondary-color 0%, $secondary-color 100%);
+    background-repeat: repeat-x; // make it horizontal
+    background-position: 10px 100%; // change the second value to adjust how far from the top the underline should be
+    background-size: 100% 10px; // change the second value to the desired height of the underline
+  }
+}
+
+.section-title{
+  width: 100%;
+  font-size: 3em;
+  padding-top: 1rem;
+  margin: 0;
   text-align: center;
   line-height: 2em;
   span {
@@ -120,8 +142,9 @@
 
 #home_mockup_section{
   position: relative;
+  height: 100vh;
   #mockup_section_card{
-    margin: 40px 5% 60px 5%;
+    margin: 5%;
     position: relative;
     border-radius: 4px;
 
@@ -129,10 +152,16 @@
 }
 
 #home_download_section{
+  background-color: $secondary-color;
+  height: 100vh;
+  color: white;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  & h3 {
+    color: white;
+  }
   & > div:first-child{
     min-height: calc(100vh - 130px);
   }
@@ -150,11 +179,27 @@
     border-radius: 5px;
   }
 }
+#home_partners_section{
+  height: calc(100vh - 80px);
+  position: relative;
+  .partners-banner {
+    min-height: calc(100vh - 300px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .partner-img-container{
+      padding: 2rem;
+      & img {
+        max-height: 8rem;
+      }
+    }
+  }
+}
 
 #footer{
   width: 100vw;
   height: 30px;
-  background-color: rgba($secondary-color, 0.8);
+  background-color: $secondary-color;
   padding: 40px;
   .footer-icon-container{
     height: 30;
@@ -187,6 +232,11 @@
     .pointer{
       font-size: 1.6rem;
       color: $primary-color
+    }
+  }
+  #home_partners_section{
+    .partners-banner {
+      flex-direction: column;
     }
   }
 }
