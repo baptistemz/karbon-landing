@@ -2,7 +2,7 @@
   "name": "landing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.karbon.earth",
+  "homepage":"https://www.karbon.earth",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
@@ -10,13 +10,11 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
-    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
-    "react-snap": "^1.23.0"
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,7 +27,11 @@
   },
   "reactSnap": {
     "waitFor": 1000,
-    "preconnectThirdParty": false
+    "preconnectThirdParty": false,
+    "fixWebpackChunksIssue": false,
+    "puppeteerIgnoreHTTPSErrors": true,
+    "inlineCss": true,
+    "INLINE_RUNTIME_CHUNK":false
   },
   "eslintConfig": {
     "extends": "react-app"
