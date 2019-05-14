@@ -169,27 +169,43 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <a className="flex-column align-items-center download-link" target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/fr/app/karbon-scanner-écologique/id1411345032">
-              <IconButton style={{ fontSize: "3rem", backgroundColor: "transparent" }}>
-                <FontAwesomeIcon icon={faApple} style={{ marginBottom: 30 }} />
-              </IconButton>
-              <Button size="large" color="secondary">
+            <Hidden smDown>
+              <a className="flex-column align-items-center download-link" target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/fr/app/karbon-scanner-écologique/id1411345032">
+                <IconButton style={{ fontSize: "3rem", backgroundColor: "transparent" }}>
+                  <FontAwesomeIcon icon={faApple} style={{ marginBottom: 30 }} />
+                </IconButton>
+                <Button size="large" color="secondary">
+                  <FontAwesomeIcon style={{ marginRight: 10, fontSize: 28, height: 28 }} icon={faAppStore} />
+                  Télécharger sur iOS
+                </Button>
+              </a>
+            </Hidden>
+            <Hidden mdUp>
+              <Button size="large" color="default">
                 <FontAwesomeIcon style={{ marginRight: 10, fontSize: 28, height: 28 }} icon={faAppStore} />
                 Télécharger sur iOS
               </Button>
-            </a>
+            </Hidden>
           </Grid>
 
           <Grid item xs={12} sm={6}>
-            <a className="flex-column align-items-center download-link" target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.baptistemz.karbon">
-              <IconButton style={{ fontSize: "3rem", backgroundColor: "transparent" }}>
-                <FontAwesomeIcon icon={faAndroid} style={{ marginBottom: 30 }} />
-              </IconButton>
-              <Button size="large" color="secondary">
+            <Hidden smDown>
+              <a className="flex-column align-items-center download-link" target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.baptistemz.karbon">
+                <IconButton style={{ fontSize: "3rem", backgroundColor: "transparent" }}>
+                  <FontAwesomeIcon icon={faAndroid} style={{ marginBottom: 30 }} />
+                </IconButton>
+                <Button size="large" color="secondary">
+                  <FontAwesomeIcon style={{ marginRight: 10, fontSize: 22, height: 28 }} icon={faGooglePlay} />
+                  Télécharger sur Android
+                </Button>
+              </a>
+            </Hidden>
+            <Hidden mdUp>
+              <Button size="large" color="default">
                 <FontAwesomeIcon style={{ marginRight: 10, fontSize: 22, height: 28 }} icon={faGooglePlay} />
                 Télécharger sur Android
               </Button>
-            </a>
+            </Hidden>
           </Grid>
           <div className="down-btn-container">
             <div onClick={() => scrollTo("#home_partners_section")} className="down-btn white-text">
