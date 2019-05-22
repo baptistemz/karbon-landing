@@ -226,14 +226,16 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
 
         </Grid>
         <div className="partners-banner">
-          {
-            // <div className="partner-img-container">
-            //   <img src="/logo-ademe.png" alt="euratechnologies"/>
-            // </div>
-            // <div className="partner-img-container">
-            //   <img src="/logo-openfoodfacts.png" alt="euratechnologies"/>
-            // </div>
-          }
+          <div className="partner-img-container">
+            <a href="https://www.ademe.fr/" target="_blank" rel="noopener noreferrer">
+              <img src="/logo-ademe.png" alt="ademe"/>
+            </a>
+          </div>
+          <div className="partner-img-container">
+            <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer">
+              <img src="/logo-openfoodfacts.png" alt="openfoodfacts"/>
+            </a>
+          </div>
           <div className="partner-img-container">
             <a href="https://www.euratechnologies.com/" target="_blank" rel="noopener noreferrer">
               <img src="/logo-euratechnologies.png" alt="euratechnologies"/>
