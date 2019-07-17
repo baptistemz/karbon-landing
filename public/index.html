@@ -23,6 +23,7 @@
     <!-- Start Single Page Apps for GitHub Pages -->
     <title>Karbon - empreinte carbone de vos produits alimentaires</title>
     <meta name="description" content="Découvrez l'empreinte environnementale de tous vos produits alimentaires grâce à l'application mobile Karbon, disponible sur iPhone et Android. Scannez tout ce qui se mange." />
+    <script async src="https://assets.tumblr.com/post.js"></script>
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // https://github.com/rafrex/spa-github-pages
@@ -52,6 +53,49 @@
         }
       }(window.location))
     </script>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>
+      function mediumWidget(postNumber){
+        MediumWidget.Init({
+          renderTo: '#medium-widget',
+          params: {
+            "resource":"https://medium.com/karbon-environnement",
+            "postsPerLine": postNumber || 1,
+            "limit": 2,
+            "picture": postNumber === 1 ? "none" : "small",
+            "fields": postNumber === 1 ? ["publishAt"] : ["description","author","claps","publishAt"],
+            "ratio":"landscape"
+          }
+        })
+      }
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.3&appId=261091564495935&autoLogAppEvents=1"></script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(
+      function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+        fnames[1]='FNAME';
+        ftypes[1]='text';
+        fnames[2]='LNAME';
+        ftypes[2]='text';
+        fnames[3]='ADDRESS';
+        ftypes[3]='address';
+        fnames[4]='PHONE';
+        ftypes[4]='phone';
+        fnames[5]='BIRTHDAY';
+        ftypes[5]='birthday';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+    </script>
+    <!--End mc_embed_signup-->
+
+
+
+
+
     <!-- End Single Page Apps for GitHub Pages -->
   </head>
   <body>
@@ -66,5 +110,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
   </body>
 </html>

@@ -2,7 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import HomeSectionContent from './HomeSectionContent';
+import MobileHomeSectionContent from './MobileHomeSectionContent';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -30,19 +30,20 @@ const HomeMockup = ({ step, sectionNumber, maxSteps, sectionName, xs, goToStep, 
   }
   return(
     <div className="space-between align-items-start overflow-hidden" style={{ padding: 0, height: "calc(100vh - 200px)" }}>
-      <HomeSectionContent goToStep={goToStep} section={sections[sectionNumber]} step={step} />
+      <MobileHomeSectionContent goToStep={goToStep} section={sections[sectionNumber]} step={step} />
       <Tabs
-        className="app-background-color"
-        style={{ position: "absolute", bottom: 0, width: "calc(100% - 340px)" }}
+        centered
+        className="app-background-color maxi-tabs"
+        style={{ position: "absolute", bottom: 100, width: "calc(100% - 340px)" }}
         color="secondary"
         classes={{ indicator: classes.noIndicator }}
         value={sectionNumber}
         onChange={(e, v) => goToSection(v)}
-        indicatorColor="secondary"
-        textColor="secondary"
+        indicatorColor="primary"
+        textColor="primary"
         >
         {sections.map(({ label, icon }, i) => (
-          <Tab key={i} icon={<FontAwesomeIcon style={{ fontSize: "24px", borderBottom: "none" }} icon={icon} />} label={label} />
+          <Tab key={i} icon={<FontAwesomeIcon icon={icon} />} label={label} />
         ))}
       </Tabs>
       <div  style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", padding: "0 30px" }}>

@@ -1,0 +1,29 @@
+#footer{
+  scroll-snap-align: end;
+  width: 100vw;
+  height: 200px;
+  background-color: $secondary-color;
+  padding: 20px 2rem;
+  a {
+    color: white;
+    padding: 10px 0;
+    margin: 8px 0;
+  }
+  .icon-circle{
+    padding: 0;
+    min-height: 42px;
+    height: 42px;
+    width: 42px;
+    margin: 0 8px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 36px;
+    border: 3px solid white;
+    svg{
+      margin: 10px;
+      height: 16px;
+      width: 16px;
+      text-align: center;
+    }
+  }
+}

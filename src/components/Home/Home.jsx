@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../../common/index';
 import HomeMockup from './HomeMockup';
 import MobileHomeMockup from './MobileHomeMockup';
+import BlogPosts from './BlogPosts';
 import HomeTitle from './HomeTitle';
 import { withState, withHandlers, pure, compose } from 'recompose';
 
@@ -12,7 +13,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarcode, faStarHalfAlt, faUsers, faEnvelope, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
-import { faApple, faAndroid, faGooglePlay, faAppStore } from '@fortawesome/free-brands-svg-icons'
+import { faApple, faAndroid, faGooglePlay, faAppStore, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
 
 const SECTIONS = [
@@ -25,10 +26,10 @@ const SECTIONS = [
         text: (<span>Scannez le code barre de votre produit alimentaire ou ajoutez-le manuellement dans l'application.</span>),
       },
       {
-        text: (<span>Obtenez une estimation de <b>l'empreinte carbonne</b> de votre produit, une <b>note environnementale</b> et de multiples données concernant son impact environnemental.</span>),
+        text: (<span>Obtenez une estimation de <b>l'empreinte carbonne</b> de votre produit.</span>),
       },
       {
-        text: (<span>Retrouvez tous vos produits scannés, triez-les, cumulez leurs empreintes carbone etc.</span>),
+        text: (<span>Ajoutez le produit à votre empreinte mensuelle et surveillez son évolution</span>),
       },
     ]
 
@@ -43,10 +44,10 @@ const SECTIONS = [
         text: (<span>Des icônes vous aident à detecter les enjeux environnementaux du produit.</span>),
       },
       {
-        text: (<span>L'estimation donnée par Karbon est celle d'une empreinte carbonne <b>"sortie du magasin"</b>(France uniquement). Elle tient compte <b>des ingrédients</b>, <b>des emballages</b>, <b>du transport</b>, <b>de la saisonnalité</b> et <b>des processus de transformation</b> du produit. <br/>Des équivalents en nombre de kilomètres en voiture ou en moto vous sont donnés en point de repère.</span>),
+        text: (<span>L'estimation donnée par Karbon est celle d'une empreinte carbonne <b>"sortie du magasin"</b>(France uniquement). Elle tient compte <b>des ingrédients</b>, <b>des emballages</b>, <b>du transport</b>, <b>de la saisonnalité</b> et <b>des processus de transformation</b> du produit. <br/></span>),
       },
       {
-        text: (<span>La "note Karbon" est une note environnementale basée sur <b>l'estimation d'empreinte carbone</b>, mais aussi d'autres éléménts comme <b>l'impact sur la déforestation</b> ou <b>les risques liés à l'emballage</b>.</span>),
+        text: (<span>La "note Karbon" est une note environnementale basée sur <b>l'estimation d'empreinte carbone</b>, mais aussi d'autres éléménts comme un potentiel <b>lien avec la déforestation</b>, <b>les labels</b>, <b>les emballages</b>.</span>),
       }
     ]
 
@@ -76,6 +77,7 @@ const step = withState("step", "setStep", 0);
 const scrollingTo = withState("scrollingTo", "setScrollingTo", 0);
 
 const countdown = withState("countdown", "setCountdown", null);
+
 
 const sectionHandlers = withHandlers({
   goToSection: ({ setSectionNumber, setStep, setScrollingTo, countdown }) => (number, stepNumber = 0) => {
@@ -122,13 +124,14 @@ const stepHandlers = withHandlers({
 })
 
 let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, step, goToStep, scrollTo }) => {
+
   scrollInSteps(step)
   return (
-    <div>
+    <div class="scroll-container">
       <HomeTitle scrollTo={scrollTo} />
       <div id="home_mockup_section">
         <Grid item xs={12}>
-          <h3 className="section-title">L'application</h3>
+          <h3 className="section-title">Scanner d'empreinte carbone</h3>
         </Grid>
         <div id="mockup_section_card">
           <Hidden mdUp>
@@ -155,7 +158,15 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
           </Hidden>
         </div>
         <div className="down-btn-container">
-          <div onClick={() => scrollTo("#home_download_section")} className="down-btn text-secondary">
+          <div onClick={() => scrollTo("#home_blog_section")} className="down-btn text-secondary">
+            <FontAwesomeIcon icon={faChevronCircleDown} />
+          </div>
+        </div>
+      </div>
+      <div id="home_blog_section">
+        <BlogPosts/>
+        <div className="down-btn-container">
+          <div onClick={() => scrollTo("#home_download_section")} className="down-btn white-text">
             <FontAwesomeIcon icon={faChevronCircleDown} />
           </div>
         </div>
@@ -164,7 +175,7 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
         <Grid container spacing={40} style={{margin: "0 10vw", width: "80vw"}}>
 
           <Grid item xs={12}>
-            <h3 className="section-title">Liens de téléchargement</h3>
+            <h3 className="section-title">Télécharger l'application</h3>
             <p className="margin-auto text-center" style={{ width: "50vw" }}>L'application Karbon désormais disponible sur iOS et sur Android. Téléchargez-la sur votre mobile et scannez tout ce qui se mange</p>
           </Grid>
 
@@ -174,17 +185,19 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
                 <IconButton style={{ fontSize: "3rem", backgroundColor: "transparent" }}>
                   <FontAwesomeIcon icon={faApple} style={{ marginBottom: 30 }} />
                 </IconButton>
-                <Button size="large" color="secondary">
+                <Button  variant="outlined" color="primary">
                   <FontAwesomeIcon style={{ marginRight: 10, fontSize: 28, height: 28 }} icon={faAppStore} />
                   Télécharger sur iOS
                 </Button>
               </a>
             </Hidden>
             <Hidden smUp>
-              <Button size="large" color="default">
-                <FontAwesomeIcon style={{ marginRight: 10, fontSize: 28, height: 28 }} icon={faAppStore} />
-                Télécharger sur iOS
-              </Button>
+              <div className="text-center">
+                <Button size="large" color="default">
+                  <FontAwesomeIcon style={{ marginRight: 10, fontSize: 28, height: 28 }} icon={faAppStore} />
+                  Télécharger sur iOS
+                </Button>
+              </div>
             </Hidden>
           </Grid>
 
@@ -194,17 +207,19 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
                 <IconButton style={{ fontSize: "3rem", backgroundColor: "transparent" }}>
                   <FontAwesomeIcon icon={faAndroid} style={{ marginBottom: 30 }} />
                 </IconButton>
-                <Button size="large" color="secondary">
+                <Button  variant="outlined" color="primary">
                   <FontAwesomeIcon style={{ marginRight: 10, fontSize: 22, height: 28 }} icon={faGooglePlay} />
                   Télécharger sur Android
                 </Button>
               </a>
             </Hidden>
             <Hidden smUp>
-              <Button size="large" color="default">
-                <FontAwesomeIcon style={{ marginRight: 10, fontSize: 22, height: 28 }} icon={faGooglePlay} />
-                Télécharger sur Android
-              </Button>
+              <div className="text-center">
+                <Button size="large" color="default">
+                  <FontAwesomeIcon style={{ marginRight: 10, fontSize: 22, height: 28 }} icon={faGooglePlay} />
+                  Télécharger sur Android
+                </Button>
+              </div>
             </Hidden>
           </Grid>
           <div className="down-btn-container">
@@ -244,15 +259,59 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
         </div>
       </div>
       <div id="footer" className="space-around">
-        <Link to="privacy_policy" className="flex align-items-center">Privacy policy (en)</Link>
-        <Link to="terms_and_conditions" className="flex align-items-center">Terms and conditions (en)</Link>
-        <a href="mailto:contact@karbon-app.com" className="flex align-items-center">
-          <FontAwesomeIcon style={{ fontSize: "1.6rem", marginRight: 10 }} icon={faEnvelope} />
-          contact@karbon-app.com
-        </a>
-        <div className="footer-icon-container">
-          <img className="footer-icon" src="/karbon-icon.png" alt="karbon icon"/>
-        </div>
+        <Grid item xs={6} md={4}>
+          <div className="flex-column space-around full-height align-items-center">
+            <Link to="privacy_policy" className="flex align-items-center">Privacy policy (en)</Link>
+            <Link to="terms_and_conditions" className="flex align-items-center">Terms and conditions (en)</Link>
+            <Hidden smUp>
+              <a target="_blank" href="https://medium.com/karbon-environnement" className="flex align-items-center">Blog</a>
+            </Hidden>
+          </div>
+        </Grid>
+        <Grid item xs={0} md={5}>
+          <div className="flex-column space-around full-height align-items-center">
+            <Hidden xsDown>
+              <a target="_blank" href="https://medium.com/karbon-environnement" className="flex align-items-center">Blog</a>
+            </Hidden>
+            <Hidden xsDown>
+              <a href="">
+                <FontAwesomeIcon icon={faAppStore} style={{ marginRight: 6 }} />
+                App Store
+              </a>
+            </Hidden>
+            <Hidden xsDown>
+              <a href="">
+                <FontAwesomeIcon icon={faGooglePlay} style={{ marginRight: 6 }} />
+                Google Play Store
+              </a>
+            </Hidden>
+          </div>
+        </Grid>
+        <Grid item xs={4} sm={3} md={3}>
+          <Hidden xsDown>
+            <div className="space-around full-height align-items-center">
+              <a href="mailto:contact@karbon-app.com" className="icon-circle">
+                <FontAwesomeIcon style={{ fontSize: "1.6rem", marginRight: 10 }} icon={faEnvelope} />
+              </a>
+              <a target="_blank" href="https://www.facebook.com/karbon.environnement" className="icon-circle">
+                <FontAwesomeIcon style={{ fontSize: "1.6rem", marginRight: 10 }} icon={faFacebookF} />
+              </a>
+            </div>
+          </Hidden>
+          <Hidden smUp>
+            <div className="flex-column space-around full-height align-items-center">
+              <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/fr/app/karbon-scanner-écologique/id1411345032">
+                <FontAwesomeIcon icon={faAppStore} style={{ marginRight: 6 }} />
+                App Store
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.baptistemz.karbon">
+                <FontAwesomeIcon icon={faGooglePlay} style={{ marginRight: 6 }} />
+                Google Play Store
+              </a>
+            </div>
+          </Hidden>
+        </Grid>
+
       </div>
     </div>
   );
