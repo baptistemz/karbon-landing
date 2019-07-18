@@ -10,10 +10,10 @@ const BlogPosts = () => {
   return(
       <div>
         <Card style={{ maxWidth: "60rem", padding: "2rem 5rem" }}>
-          <h3 className="section-title white-text text-secondary no-padding">Les publications de Karbon</h3>
+          <h3 className="section-title white-text text-secondary no-padding">Les articles de Karbon</h3>
           <div id="medium-widget"></div>
           <div className="full-width text-right">
-            <a href=""><big class="text-primary"><FontAwesomeIcon icon={faNewspaper} /> {" Toutes les publications"}</big></a>
+            <a target="_blank" href="https://medium.com/karbon-environnement"><big class="text-primary"><FontAwesomeIcon icon={faNewspaper} /> {" Toutes les publications"}</big></a>
           </div>
           <div class="three-dots">
             <span></span>
@@ -22,7 +22,7 @@ const BlogPosts = () => {
           </div>
           <div className="full-width justify-center">
             <div className="flex-1 text-center justify-center flex-column" style={{
-                backgroundColor: "#EFEFEF",
+                backgroundColor: "rgba(44, 181, 145, 0.1)",
                 borderRadius: 5,
                 padding: 10,
                 maxWidth: 280

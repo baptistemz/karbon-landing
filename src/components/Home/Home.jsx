@@ -29,7 +29,7 @@ const SECTIONS = [
         text: (<span>Obtenez une estimation de <b>l'empreinte carbonne</b> de votre produit.</span>),
       },
       {
-        text: (<span>Ajoutez le produit à votre empreinte mensuelle et surveillez son évolution</span>),
+        text: (<span>Ajoutez le produit à votre empreinte mensuelle pour le retrouver dans votre tableau de bord.</span>),
       },
     ]
 
@@ -62,7 +62,7 @@ const SECTIONS = [
         text: <span>Contribuez ! <br/>Spécifiez les ingrédients et emballages s'ils n'apparaissent pas sur les fiches produit afin d'affiner nos estimations.</span>,
       },
       {
-        text: <span>Rejoignez la communauté Karbon. Recevez fréquement des rapports sur votre impact carbone et des conseils pour une consommation plus respectueuse de notre planète.</span>,
+        text: <span>Consultez votre empreinte mensuelle et obtenez des conseils pour une consommation plus respectueuse de notre planète.</span>,
       },
     ]
   }
@@ -274,13 +274,13 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
               <a target="_blank" href="https://medium.com/karbon-environnement" className="flex align-items-center">Blog</a>
             </Hidden>
             <Hidden xsDown>
-              <a href="">
+              <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/fr/app/karbon-scanner-écologique/id1411345032">
                 <FontAwesomeIcon icon={faAppStore} style={{ marginRight: 6 }} />
                 App Store
               </a>
             </Hidden>
             <Hidden xsDown>
-              <a href="">
+              <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.baptistemz.karbon">
                 <FontAwesomeIcon icon={faGooglePlay} style={{ marginRight: 6 }} />
                 Google Play Store
               </a>
