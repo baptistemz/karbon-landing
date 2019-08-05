@@ -29,7 +29,7 @@ const HomeMockup = ({ step, sectionNumber, maxSteps, sectionName, xs, goToStep, 
     }
   }
   return(
-    <div className="space-between align-items-start overflow-hidden" style={{ padding: 0, height: "calc(100vh - 200px)" }}>
+    <div className="space-between align-items-start" style={{ padding: 0, height: "calc(100vh - 200px)" }}>
       <MobileHomeSectionContent goToStep={goToStep} section={sections[sectionNumber]} step={step} />
       <Tabs
         centered

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button } from '../../common/index';
 import HomeMockup from './HomeMockup';
 import MobileHomeMockup from './MobileHomeMockup';
 import BlogPosts from './BlogPosts';
 import HomeTitle from './HomeTitle';
+import Footer from './Footer';
 import { withState, withHandlers, pure, compose } from 'recompose';
 
 import Grid from '@material-ui/core/Grid';
@@ -12,8 +12,8 @@ import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBarcode, faStarHalfAlt, faUsers, faEnvelope, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
-import { faApple, faAndroid, faGooglePlay, faAppStore, faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faBarcode, faStarHalfAlt, faUsers, faChevronCircleDown } from '@fortawesome/free-solid-svg-icons'
+import { faApple, faAndroid, faGooglePlay, faAppStore } from '@fortawesome/free-brands-svg-icons'
 
 
 const SECTIONS = [
@@ -258,61 +258,7 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
           </div>
         </div>
       </div>
-      <div id="footer" className="space-around">
-        <Grid item xs={6} md={4}>
-          <div className="flex-column space-around full-height align-items-center">
-            <Link to="privacy_policy" className="flex align-items-center">Privacy policy (en)</Link>
-            <Link to="terms_and_conditions" className="flex align-items-center">Terms and conditions (en)</Link>
-            <Hidden smUp>
-              <a target="_blank" href="https://medium.com/karbon-environnement" className="flex align-items-center">Blog</a>
-            </Hidden>
-          </div>
-        </Grid>
-        <Grid item xs={0} md={5}>
-          <div className="flex-column space-around full-height align-items-center">
-            <Hidden xsDown>
-              <a target="_blank" href="https://medium.com/karbon-environnement" className="flex align-items-center">Blog</a>
-            </Hidden>
-            <Hidden xsDown>
-              <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/fr/app/karbon-scanner-écologique/id1411345032">
-                <FontAwesomeIcon icon={faAppStore} style={{ marginRight: 6 }} />
-                App Store
-              </a>
-            </Hidden>
-            <Hidden xsDown>
-              <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.baptistemz.karbon">
-                <FontAwesomeIcon icon={faGooglePlay} style={{ marginRight: 6 }} />
-                Google Play Store
-              </a>
-            </Hidden>
-          </div>
-        </Grid>
-        <Grid item xs={4} sm={3} md={3}>
-          <Hidden xsDown>
-            <div className="space-around full-height align-items-center">
-              <a href="mailto:contact@karbon-app.com" className="icon-circle">
-                <FontAwesomeIcon style={{ fontSize: "1.6rem", marginRight: 10 }} icon={faEnvelope} />
-              </a>
-              <a target="_blank" href="https://www.facebook.com/karbon.environnement" className="icon-circle">
-                <FontAwesomeIcon style={{ fontSize: "1.6rem", marginRight: 10 }} icon={faFacebookF} />
-              </a>
-            </div>
-          </Hidden>
-          <Hidden smUp>
-            <div className="flex-column space-around full-height align-items-center">
-              <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/fr/app/karbon-scanner-écologique/id1411345032">
-                <FontAwesomeIcon icon={faAppStore} style={{ marginRight: 6 }} />
-                App Store
-              </a>
-              <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.baptistemz.karbon">
-                <FontAwesomeIcon icon={faGooglePlay} style={{ marginRight: 6 }} />
-                Google Play Store
-              </a>
-            </div>
-          </Hidden>
-        </Grid>
-
-      </div>
+      <Footer />
     </div>
   );
 }

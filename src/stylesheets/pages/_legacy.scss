@@ -1,0 +1,29 @@
+.legacy-page{
+  margin: 0 2vw;
+  h1, h2{
+    width: 100%;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 4rem;
+  }
+  h3 {
+    width: 100%;
+    border-bottom: 1px solid $secondary-color;
+    margin: 2rem 0;
+  }
+  p{
+    margin-bottom: 4rem;
+  }
+  ul > li {
+    margin-bottom: 1rem;
+  }
+  .setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .setting-switch{
+
+    }
+  }
+}

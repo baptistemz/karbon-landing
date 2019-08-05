@@ -1,4 +1,4 @@
-$main-font: 'Special Elite', cursive;
+$main-font: 'Rubik', cursive;
 
 // Colors
 $black: #000;
@@ -12,7 +12,7 @@ $n-height: $n-width * 5;
 *, *::before, *::after{
   box-sizing: border-box;
 }
-body{
+.over-wrap-404{
   display: flex;
   justify-content: center;
   align-items: center;

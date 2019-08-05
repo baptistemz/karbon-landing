@@ -47,7 +47,7 @@ const ButtonsGroup = () => {
         </Button>
       </a>
       <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.baptistemz.karbon">
-        <Button variant="outlined" color="primary" className="overflow-hidden-button">
+        <Button variant="outlined" color="primary">
           <FontAwesomeIcon style={{ marginRight: 10, fontSize: "2.2rem", height: "2.2rem" }} icon={faGooglePlay} />
           Google Play Store
         </Button>
@@ -67,7 +67,7 @@ let HomeTitle = ({ quote, startQuotes, setQuote, scrollTo, goToQuote }) => {
       <img className="app-logo" src="/karbon-logo.png" alt=""/>
       <Hidden xsDown>
         <h1 id="home_title">
-          <span>Mesurez l'impact </span>
+          <span>Mesurez l'impact</span>
           <br/>
           <span className="title-bottom">
             <span>de vos produits alimentaires</span>
@@ -77,7 +77,7 @@ let HomeTitle = ({ quote, startQuotes, setQuote, scrollTo, goToQuote }) => {
       </Hidden>
       <Hidden smUp>
         <h1 id="home_title">
-          <span>Mesurez </span>
+          <span>Mesurez</span>
           <br/>
           <span>l'impact de vos</span>
           <br/>
