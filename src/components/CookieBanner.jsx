@@ -12,7 +12,7 @@ const CookieBanner = ({ cookies, location }) => {
         <p className="text-secondary">
           Nous utilisons des cookies de mesure d’audience afin d'améliorer votre expérience. Acceptez-vous le dépôt et la lecture de ces cookies ?
         </p>
-        <div className="button-group">
+        <div className="cookies-button-group">
           <Link to="/cookies_settings">
             <Button variant="outlined" color="secondary">
               <FontAwesomeIcon style={{ marginRight: 10 }} icon={faSlidersH} />

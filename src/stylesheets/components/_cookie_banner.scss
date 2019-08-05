@@ -5,12 +5,12 @@
   right: 0;
   background-color: rgba(250, 250, 250, 0.7);
   padding: 2rem;
-  .button-group{
-    display: flex;
-    justify-content: flex-end;
-    button{
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-    }
+}
+.cookies-button-group{
+  display: flex;
+  justify-content: flex-end;
+  button{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { withRouter, Link } from 'react-router-dom';
-import Switch from '@material-ui/core/Switch';
+import Toggle from 'react-toggle';
 import Button from '@material-ui/core/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSmile, faCheckCircle } from '@fortawesome/free-regular-svg-icons'
@@ -8,7 +8,12 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 
 const CookiesSettings = ({ cookies, location }) => {
-  const [analyticsCookies, setAnalyticsCookies] = useState(false);
+  const [formCookies, setFormCookies] = useState({
+    analytics: true
+  });
+  const handleChange = name => event => {
+    setFormCookies({ ...formCookies, [name]: event.target.checked });
+  };
   return(
     <div>
       <div className="legacy-page">
@@ -33,21 +38,29 @@ const CookiesSettings = ({ cookies, location }) => {
             </p>
           </div>
           <div className="setting-switch">
-            <Switch checked={analyticsCookies} onChange={(e, checked) => setAnalyticsCookies(checked)} size="medium" />
+            <Toggle
+              defaultChecked={formCookies.analytics}
+              aria-label='No label tag'
+              onChange={handleChange('analytics')} />
+
           </div>
         </div>
-        <Link to={(location.state && location.state.from) || "/"}>
-          <Button variant="outlined" color="secondary">
-            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faChevronLeft} />
-            Retour
-          </Button>
-        </Link>
-        <Link id="validate-cookies-settings" to={(location.state && location.state.from) || "/"} onClick={() => cookies.set('accept_cookies', analyticsCookies, { path: '/' })}>
-          <Button variant="outlined" color="secondary">
-            <FontAwesomeIcon style={{ marginRight: 10 }} icon={faCheckCircle} />
-            Valider
-          </Button>
-        </Link>
+        <div className="cookies-button-group">
+          <Link to={(location.state && location.state.from) || "/"}>
+            <Button variant="outlined" color="secondary">
+              <FontAwesomeIcon style={{ marginRight: 10 }} icon={faChevronLeft} />
+              Retour
+            </Button>
+          </Link>
+          <a id="validate-cookies-settings" href={(location.state && location.state.from) || "/"} >
+            <Button variant="outlined" color="secondary" onClick={() => {
+                cookies.set('accept_cookies', formCookies.analytics, { path: '/' })
+              }}>
+              <FontAwesomeIcon style={{ marginRight: 10 }} icon={faCheckCircle} />
+              Valider
+            </Button>
+          </a>
+        </div>
       </div>
     </div>
 
