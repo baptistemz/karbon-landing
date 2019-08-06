@@ -9,7 +9,7 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 const CookiesSettings = ({ cookies, location }) => {
   const [formCookies, setFormCookies] = useState({
-    analytics: true
+    analytics: cookies.get('accept_cookies') === 'true'
   });
   const handleChange = name => event => {
     setFormCookies({ ...formCookies, [name]: event.target.checked });
