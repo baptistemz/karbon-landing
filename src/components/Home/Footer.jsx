@@ -11,8 +11,8 @@ const Footer = () => {
     <div id="footer" className="space-around">
       <Grid item xs={6} md={4}>
         <div className="flex-column space-around full-height align-items-center">
-          <Link to="privacy_policy" className="flex align-items-center">Politique de vie privée</Link>
-          <Link to="terms_and_conditions" className="flex align-items-center">Conditions d'utilisation</Link>
+          <Link to="/privacy_policy" className="flex align-items-center">Politique de vie privée</Link>
+          <Link to="/terms_and_conditions" className="flex align-items-center">Conditions d'utilisation</Link>
           <Hidden smUp>
             <a target="_blank" href="https://medium.com/karbon-environnement" className="flex align-items-center">Blog</a>
           </Hidden>
