@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <h1>Conditions d'utilisation des services Karbon</h1>
         <h2>Version en vigueur au 1er août 2019 </h2>
         <p>
-          Le présent Site Internet accessible à l’adresse URL suivante :  <a href="/">https://www.karbon.earth/</a> est édité par <b>Monsieur Baptiste MULLIEZ</b>, dont les informations légales sont détaillées ci-dessous.
+          Le présent Site Internet accessible à l’adresse URL suivante :  <a href="/">https://www.karbon.earth/</a> est édité par <b>SAS Karbon</b>, dont les informations légales sont détaillées ci-dessous.
           <br/><br/>
           L’utilisation du Site est destinée aux personnes physiques majeures ayant la capacité de contracter (ci-après <b>« l’Utilisateur »</b>).
           <br/><br/>
@@ -21,13 +21,7 @@ const PrivacyPolicy = () => {
         <h3>
           Identification de l’éditeur du Site
         </h3>
-        <p>L’éditeur du présent Site est Monsieur Baptiste MULLIEZ, dont le domicile professionnel est situé à EuraTechnologies - 165 avenue de Bretagne – 59 000 Lille (ci-après « l’Editeur »).</p>
-        <h3>
-          Directeur de la publication
-        </h3>
-        <p>
-          Le Directeur de la publication est : Monsieur Baptiste MULLIEZ
-        </p>
+        <p>L’éditeur du présent Site est SAS Karbon, domiciliée à EuraTechnologies - 165 avenue de Bretagne – 59 000 Lille (ci-après « l’Editeur »).</p>
         <h3>
           Hébergeur
         </h3>

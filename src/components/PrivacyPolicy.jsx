@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
 
           <b>Données :</b> désignent les données personnelles de l’Utilisateur collectées pour les finalités décrites         ci-après.
 
-          <b>Responsable du traitement :</b> désigne Monsieur Baptiste MULLIEZ.
+          <b>Responsable du traitement :</b> désigne la SAS Karbon.
           <b>Tiers :</b> désigne toute personne physique ou morale qui n’est pas partie à la présente politique.
         </p>
         <h3>
@@ -58,9 +58,9 @@ const PrivacyPolicy = () => {
         <p>
           Le Responsable du traitement met en œuvre un traitement des Données conformément aux dispositions du RGPD et de la loi Informatique et Libertés.
           <br/><br/>
-          La personne que l’Utilisateur peut contacter concernant la protection de ses Données est :
-          MULLIEZ Baptiste <br/>
-          Adresse email de contact : contact@karbon-app.com
+          L'Adresse email que l’Utilisateur peut contacter concernant la protection de ses Données est :
+          contact@karbon-app.com <br/>
+
         </p>
         <h3>
           Données collectées, lieu de la collecte et finalités du traitement de Données
