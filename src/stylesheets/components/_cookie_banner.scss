@@ -1,9 +1,10 @@
 .cookier-banner{
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 0;
+  right: 0;
   width: 30%;
-  z-index: 10;
+  margin: 15px;
+  z-index: 100;
   background-color: #FFF;
   border: 1px solid $light-grey-color;
   padding: 2rem;
@@ -26,6 +27,6 @@
 
 @media only screen and (max-width: 601px){
   .cookier-banner{
-    width: 100%;
+    width: calc(100% - 30px);
   }
 }

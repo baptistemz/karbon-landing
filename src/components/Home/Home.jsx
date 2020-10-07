@@ -130,7 +130,6 @@ let Home = ({ anchorEl, setAnchorEl, sectionNumber, goToSection, scrollInSteps, 
           <Container>
             <NavBar />
             <TitleSection />
-            <CrowdfundingCard/>
           </Container>
         </div>
         <div id="background_2">
