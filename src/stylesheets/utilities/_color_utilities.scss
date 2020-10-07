@@ -11,6 +11,18 @@
   background-color: white;
 }
 
+.background-success{
+  background-color: $success-color;
+}
+
+.background-warning{
+  background-color: $warning-color;
+}
+
+.background-danger{
+  background-color: $danger-color;
+}
+
 body{
   background-color: #f4f4f4;
 }

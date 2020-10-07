@@ -10,17 +10,17 @@ const CookieBanner = ({ cookies, location }) => {
     return(
       <div className="cookier-banner">
         <p className="text-secondary">
-          Nous utilisons des cookies de mesure d’audience afin d'améliorer votre expérience. Acceptez-vous le dépôt et la lecture de ces cookies ?
+          Nous utilisons UNIQUEMENT des cookies de mesure d’audience afin d'améliorer votre expérience. Acceptez-vous le dépôt et la lecture de ces cookies ?
         </p>
         <div className="cookies-button-group">
           <Link to="/cookies_settings">
-            <Button variant="outlined" color="secondary">
+            <Button variant="outlined">
               <FontAwesomeIcon style={{ marginRight: 10 }} icon={faSlidersH} />
               parametrer
             </Button>
           </Link>
           <a href="/" id="accept-cookies">
-            <Button variant="contained" color="secondary" onClick={() => cookies.set('accept_cookies', true, { path: '/' })}>
+            <Button variant="contained" onClick={() => cookies.set('accept_cookies', true, { path: '/' })}>
               <FontAwesomeIcon style={{ marginRight: 10 }} icon={faCheckCircle} />
               Accepter
             </Button>

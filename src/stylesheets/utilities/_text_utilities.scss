@@ -1,15 +1,16 @@
 body {
-  font-family: 'Montserrat';
-  font-size: 16px;
+  font-family: 'Nunito';
 }
 
-h1 {
-  font-family: 'Catamaran';
-  color: $secondary-color;
-}
+h1 {font-size: 2.0rem; line-height: 1.5; margin-bottom: 0}
+h2 {font-size: 2.0rem}
+h3 {font-size: 1.6rem}
+h4 {font-size: 1.15rem}
+h5 {font-size: 1.1rem}
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Catamaran';
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito';
+  font-weight: 600;
   color: $secondary-color;
 }
 
@@ -41,6 +42,32 @@ h2, h3, h4, h5, h6 {
   color: $secondary-color;
 }
 
+.text-success{
+  color: $success-color;
+}
+
+.text-warning{
+  color: $warning-color;
+}
+
+.text-danger{
+  color: $danger-color;
+}
+
+.text-white{
+  color: #FFF;
+}
+
 .text-bold{
   font-weight: bold;
+}
+
+.highlighted-text {
+  padding-left: 4px;
+  margin-left: -4px;
+  padding-right: 4px;
+  margin-right: -4px;
+  color: $success-color;
+  // background-color: $success-color;
+  // color: #FFFFFF;
 }

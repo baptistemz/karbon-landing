@@ -3,3 +3,37 @@
   font-size: 20px;
   margin: 30px
 }
+
+.app {
+ &-btn {
+  width: 45%;
+  max-width: 160px;
+  color: #fff;
+  margin: 10px 5px;
+  text-align: left;
+  border-radius: 5px;
+  text-decoration: none;
+  & > p{
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  &.blu {
+   background-color: #101010;
+   transition: background-color 0.25s linear;
+   &:hover {
+    background-color: #454545;
+   }
+  }
+  svg {
+   width: 20%;
+   text-align: center;
+   font-size: 30px;
+   height: 30px;
+  }
+  .big-txt {
+   font-size: 17px;
+   text-transform: capitalize;
+  }
+ }
+}

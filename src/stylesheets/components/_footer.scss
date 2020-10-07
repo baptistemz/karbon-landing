@@ -1,8 +1,10 @@
 #footer{
   scroll-snap-align: end;
   width: 100vw;
-  height: 200px;
-  background-color: $secondary-color;
+  height: 310px;
+  background-image: url('/footer_bg.png');
+  background-size: cover;
+  background-position: center;
   padding: 20px 2rem;
   a {
     color: white;
