@@ -7,13 +7,13 @@ const PartnersSection = () => (
       <img src="/agribalyse.jpg" alt=""/>
     </a>
     <a target="_blank" href="https://www.alkemics.com/">
-      <img src="/logo-alkemics.png" alt=""/>
+      <img src="/logo-alkemics.webp" alt=""/>
     </a>
     <a target="_blank" href="https://world.openfoodfacts.org/">
-      <img src="/logo-openfoodfacts.png" alt=""/>
+      <img src="/logo-openfoodfacts.webp" alt=""/>
     </a>
     <a target="_blank" href="https://www.ethic-ocean.org/">
-      <img src="/logo-ethic-ocean.png" alt=""/>
+      <img src="/logo-ethic-ocean.webp" alt=""/>
     </a>
   </div>
 );

@@ -25,7 +25,7 @@ const TitleSection = () => (
     </div>
     <Hidden smDown>
       <div id="home_device_image_container">
-        <img src="/landing_device.png" alt=""/>
+        <img src="/landing_device.webp" alt=""/>
       </div>
     </Hidden>
   </div>

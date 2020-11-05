@@ -5,7 +5,7 @@ import { Button } from '../../common';
 const NavBar = () => {
   return(
     <div id="navbar" className="space-around">
-      <img src="/karbon-logo.png" alt="logo"/>
+      <img src="/karbon-logo.webp" alt="logo"/>
       <a target="_blank" href="https://www.kisskissbankbank.com/fr/projects/karbon-scanner-ecologique">
         <Button color="secondary">Contribuer</Button>
       </a>

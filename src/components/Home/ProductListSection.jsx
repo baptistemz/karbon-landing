@@ -26,7 +26,7 @@ const ProductListSection = () => {
           {productsArray.map((el, index) => (
             <Slide index={index}>
               <Card>
-                <img src={`/product${index > 9 ? index - 9 : index + 1}.png`} alt=""/>
+                <img src={`/product${index > 9 ? index - 9 : index + 1}.webp`} alt=""/>
               </Card>
             </Slide>
           ))}

@@ -14,19 +14,19 @@ const MediaSection = () => {
               </div>
             :
               <a onClick={() => setPlayerOpenned(true)}>
-                <img src="/europe1.png" alt=""/>
+                <img src="/europe1.webp" alt=""/>
               </a>
           }
       </div>
       <div className="small-pictures space-around">
         <a target="_blank" href="https://www.trnd.com/fr/idees/karbon">
-          <img src="/trnd.png" alt=""/>
+          <img src="/trnd.webp" alt=""/>
         </a>
         <a target="_blank" href="https://www.leparisien.fr/guide-shopping/high-tech/informatique/les-applications-pour-mieux-consommer-en-vacances-20-07-2020-8355681.php">
-          <img src="/le-parisien.png" alt=""/>
+          <img src="/le-parisien.webp" alt=""/>
         </a>
         <a target="_blank" href="https://bienvivreledigital.orange.fr/vie-perso/12-applis-pour-mesurer-ton-empreinte-carbone-et-faire-de-toi-un-green-citizen/">
-          <img src="/orange.png" alt=""/>
+          <img src="/orange.webp" alt=""/>
         </a>
       </div>
 
