@@ -37,4 +37,4 @@ const ProductListSection = () => {
 }
 
 
-export default ProductListSection;
+export { ProductListSection };

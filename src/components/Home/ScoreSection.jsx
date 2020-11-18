@@ -17,7 +17,7 @@ const ScoreSection = ({ grade }) => (
       <div id="grade_section">
         <Card>
           <div className="grade-visual">
-            <img src="/karbon-icon.png" alt=""/>
+            <img src="/karbon-icon.webp" alt=""/>
             <span className={grade > 66 ? "text-success" : (grade > 33 ? "text-warning" : "text-danger")}>
               <big>{grade}</big>/100
             </span>
@@ -52,4 +52,4 @@ const ScoreSection = ({ grade }) => (
   </Grid>
 );
 
-export default ScoreSection;
+export { ScoreSection };

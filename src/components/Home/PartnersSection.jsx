@@ -4,7 +4,7 @@ import React from 'react';
 const PartnersSection = () => (
   <div id="partner_pictures">
     <a target="_blank" href="https://ecolab.ademe.fr/agribalyse">
-      <img src="/agribalyse.jpg" alt=""/>
+      <img src="/agribalyse.webp" alt=""/>
     </a>
     <a target="_blank" href="https://www.alkemics.com/">
       <img src="/logo-alkemics.webp" alt=""/>
@@ -19,4 +19,4 @@ const PartnersSection = () => (
 );
 
 
-export default PartnersSection;
+export { PartnersSection };

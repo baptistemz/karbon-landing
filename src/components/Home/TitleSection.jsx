@@ -32,4 +32,4 @@ const TitleSection = () => (
 );
 
 
-export default TitleSection;
+export { TitleSection };

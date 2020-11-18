@@ -1,0 +1,63 @@
+#jobs_title_container {
+  height: calc(100vh - 250px);
+  display: flex;
+  align-items: center;
+  padding-right: 5vw;
+}
+
+#jobs_building_image_card {
+  padding: 10%;
+  img {
+    width: 100%;
+    // width: 40vw;
+  }
+}
+
+.jobs-page{
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.job-list{
+  border-radius: 8px;
+  ul {
+    padding: 20px
+  }
+  a {
+    &:first-child{
+      border-top: none;
+    }
+    border-top: 1px solid #FFF;
+    li {
+      border-left: 5px solid $primary-color;
+      margin: 5px 0;
+      padding: 12px;
+      list-style: none;
+      h4 {
+        margin: 0 0 10px 0;
+      }
+      span {
+        font-size: 0.8rem;
+        background-color: #205970;
+        color: #FFF;
+        border-radius: 20px;
+        padding: 5px 10px;
+      }
+      &:hover, &:focus{
+        background-color: $light-color;
+        margin-left: 2px;
+        border-left: 6px solid $primary-color;
+        h1{
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+
+.spontaneous-application{
+  margin: 100px 0;
+  text-align: center;
+}

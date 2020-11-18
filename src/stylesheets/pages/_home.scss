@@ -1,5 +1,5 @@
 #background_1 {
-  background-image: url('/section_1_bg.png');
+  background-image: url('/section_1_bg.webp');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -7,7 +7,7 @@
     display: grid;
   }
   #home_title_container{
-    height: calc(100vh - 250px);
+    height: calc(100vh - 180px);
     display: flex;
     align-items: center;
   }
@@ -44,7 +44,7 @@
   }
 }
 #background_2 {
-  background-image: url('/section_2_bg.png');
+  background-image: url('/section_2_bg.webp');
   background-size: cover;
   background-position: bottom center;
   min-height: 876px;
@@ -92,7 +92,7 @@
   }
 }
 #background_3 {
-  background-image: url('/section_3_bg.png');
+  background-image: url('/section_3_bg.webp');
   background-size: cover;
   padding-top: 50px;
   background-position: center;
@@ -179,7 +179,7 @@
 @media only screen and (max-width: 959px){
   #background_1 {
     #home_title_container{
-      height: calc(100vh - 380px);
+      height: calc(100vh - 180px);
     }
     #kisskiss_card{
       margin-top: 0px;

@@ -38,4 +38,4 @@ const MediaSection = () => {
 };
 
 
-export default MediaSection;
+export { MediaSection };

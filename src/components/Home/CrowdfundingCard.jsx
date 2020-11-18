@@ -3,7 +3,7 @@ import { Button } from '../../common/index';
 import Card from '@material-ui/core/Card';
 
 const CrowdfundingCard = () => (
-  <Card id="kisskiss_card">
+  <Card softShadow id="kisskiss_card">
     <img src="/kisskissbankbank.png" alt=""/>
     <h4>Aidez-nous à améliorer le score Karbon sur <span className="highlighted-text">KisskissBankbank</span></h4>
     <div className="btn-container">
@@ -14,4 +14,4 @@ const CrowdfundingCard = () => (
   </Card>
 );
 
-export default CrowdfundingCard;
+export { CrowdfundingCard };

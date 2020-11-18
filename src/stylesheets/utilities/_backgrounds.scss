@@ -1,0 +1,22 @@
+.top-light-background {
+  background-image: url('/section_1_bg.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.top-dark-background {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: "#FFF";
+  background-image: url('/section_2_bg.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.bottom-light-background {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('/section_3_bg.webp');
+  background-size: cover;
+  background-position: center;
+}

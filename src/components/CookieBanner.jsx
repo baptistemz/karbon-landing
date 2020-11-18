@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
 
-const CookieBanner = ({ cookies, location }) => {
+let CookieBanner = ({ cookies, location }) => {
   if(!cookies.get('accept_cookies') && location.pathname !== "/cookies_settings"){
     return(
       <div className="cookier-banner">
@@ -33,4 +33,6 @@ const CookieBanner = ({ cookies, location }) => {
   }
 }
 
-export default withRouter(CookieBanner);
+CookieBanner = withRouter(CookieBanner);
+
+export { CookieBanner };

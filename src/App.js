@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Routes from './Routes';
-import './stylesheets/application.scss'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import { createMuiTheme } from '@material-ui/core/styles';
+import { MetaTags } from './common';
+import './stylesheets/application.scss'
 
 const theme = createMuiTheme({
   overrides: {
@@ -60,6 +61,7 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider theme={theme}>
+        <MetaTags metaData={{}} />
         <Routes />
       </MuiThemeProvider>
     );
